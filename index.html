@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estacionamento de Veículos</title>
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body onload="mostraPatio()">
+    <div class="container-fluid">
+        <div class="header clearfix">
+            <h1>Estacionamento de Veículos</h1>
+        </div>
+        
+        <div class="jumbotron">
+            <form id="formulario">
+                <div class="form-group">
+                    <label for="modelo">Modelo do veículo</label>
+                    <input type="text" id="modelo" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="placa">Placa do veículo</label>
+                    <input type="text" id="placa" class="form-control">
+                </div>
+                <input type="submit" class="btn btn-primary" value="Cadastrar">
+            </form>
+        </div>
+        <div class="row marketing">
+            <div class="col-lg-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Modelo</th>
+                            <th>Placa</th>
+                            <th>Entrada</th>
+                            <th>Controle</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultado"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
